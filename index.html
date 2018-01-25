@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <link href="theme/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--PAGE HEADER-->
+<div class="container">
+    <div class="row">
+
+        <!--LOGO-->
+        <div class="col-sm-4">
+            <a href="/">
+                <img src="images/logo.png" height="50">
+            </a>
+        </div>
+        <!--END LOGO-->
+
+        <!--MAIN MENU-->
+        <div class="col-sm-8 text-right">
+            <!--HOME-->
+            <button type="button" class="btn btn-link">
+                <i class="fa fa-home"></i>
+            </button>
+            <!--SEARCH-->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                    <button id="mainMenuSearch" type="button" class="btn btn-link dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-binoculars"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="mainMenuSearch" x-placement="bottom-start">
+                        <a class="dropdown-item" href="#">Sensors</a>
+                        <a class="dropdown-item" href="#">Users</a>
+                    </div>
+                </div>
+            </div>
+            <!--USERS-->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                    <button id="mainMenuUsers" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-users"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="mainMenuUsers" x-placement="bottom-start">
+                        <a class="dropdown-item" href="#">Users</a>
+                        <a class="dropdown-item" href="#">Roles</a>
+                    </div>
+                </div>
+            </div>
+            <!--OPTIONS-->
+            <button type="button" class="btn btn-link">
+                <i class="fa fa-cog"></i>
+            </button>
+            <!--PROFILE-->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                    <button id="mainMenuProfile" type="button" class="btn btn-link dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Super Admin
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="mainMenuProfile" x-placement="bottom-start">
+                        <a class="dropdown-item active" href="#">&nbsp;English</a>
+                        <a class="dropdown-item" href="#">&nbsp;中國</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END MAIN MENU-->
+
+    </div>
+</div>
+<!--END PAGE HEADER-->
+
+<!--PAGE TITLE-->
+<div class="jumbotron padding-null margin-null">
+    <h2 class="text-center">Art of Us Sensorspases</h2>
+</div>
+<!--END PAGE TITLE-->
+
+<div class="container">
+    <div class="row">
+
+        <!--SIDEBAR-->
+        <div class="col-md-auto">
+            <div class="side-bar">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-sensor"></span>
+                            <span class="create-label">Sensor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-group"></span>
+                            <span class="create-label">Group</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-channel"></span>
+                            <span class="create-label">Channel</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-superchannel"></span>
+                            <span class="create-label">Super Channel</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-band"></span>
+                            <span class="create-label">Band</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-stash"></span>
+                            <span class="create-label">Stash</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-hoard"></span>
+                            <span class="create-label">Hoard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="create-icon create-icon-superhoard"></span>
+                            <span class="create-label">Super Hoard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <span class="create-icon create-icon-herd"></span>
+                            <span class="create-label">Herd</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <span class="create-icon create-icon-sensorspace"></span>
+                            <span class="create-label">Sensorspace</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--END SIDEBAR-->
+
+        <!--MAIN-->
+        <div class="col-md">
+            <div class="row">
+
+                <!--BREADCRUMBS-->
+                <div class="col-md">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Sensorspace 1</a></li>
+                        <li class="breadcrumb-item active">Herd 305</li>
+                    </ol>
+                </div>
+                <!--END BREADCRUMBS-->
+
+                <!--PAGINATION-->
+                <div class="col-md-auto">
+                    <div class="pagination">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button id="paginationPerPage" type="button" class="btn btn-link btn-sm"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Items 1 - 10 of 18
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="paginationPerPage"
+                                     x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">10 per page</a>
+                                    <a class="dropdown-item" href="#">20 per page</a>
+                                    <a class="dropdown-item" href="#">50 per page</a>
+                                    <a class="dropdown-item" href="#">150 per page</a>
+                                    <a class="dropdown-item" href="#">show all</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-link btn-sm">
+                            <i class="fa fa-caret-left"></i>
+                        </button>
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <div class="btn-group" role="group">
+                                <button id="paginationToPage" type="button" class="btn btn-link btn-sm"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Page 1
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="paginationToPage"
+                                     x-placement="bottom-start">
+                                    <a class="dropdown-item active" href="#">To first page</a>
+                                    <a class="dropdown-item" href="#">To page 2</a>
+                                    <a class="dropdown-item" href="#">To page 3</a>
+                                    <a class="dropdown-item" href="#">To page 4</a>
+                                    <a class="dropdown-item" href="#">To page 5</a>
+                                    <a class="dropdown-item" href="#">To page 6</a>
+                                    <a class="dropdown-item" href="#">To page 7</a>
+                                    <a class="dropdown-item" href="#">To page 8</a>
+                                    <a class="dropdown-item" href="#">To page 9</a>
+                                    <a class="dropdown-item" href="#">To page 10</a>
+                                    <a class="dropdown-item" href="#">To last page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-link btn-sm">
+                            <i class="fa fa-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--END PAGINATION-->
+
+            </div>
+
+            <!--SENSOR CONTAINER-->
+            <div class="row sensor-container herd">
+
+                <!--CONTAINER HEADER-->
+                <div class="col-md-12">
+                    <div class="container-header row">
+                        <div class="col-md">
+                            <!--<h3>All sensorspaces</h3>-->
+                            <h3>Herd 305</h3>
+                        </div>
+                        <div class="col-md-auto pull-right">
+                            <div class="row">
+                                <div class="col-sm-3 filter-all">
+                                    <button type="button" class="btn btn-link btn-sm">
+                                        All
+                                    </button>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                        <div class="btn-group" role="group">
+                                            <button id="filterActive" type="button" class="btn btn-link btn-sm"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Active
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="filterActive"
+                                                 x-placement="bottom-start">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    All active
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Configuring
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Authentificated
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Settingup
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Upgrading
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Setup
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Inservice
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Inservise Test
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator active on"></span>
+                                                    Inservise R&D
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-summary text-center">
+                                        <span class="filter-indicator active"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                        <div class="btn-group" role="group">
+                                            <button id="filterInactive" type="button" class="btn btn-link btn-sm"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Inactive
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="filterInactive"
+                                                 x-placement="bottom-start">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator inactive on"></span>
+                                                    All inactive
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator inactive on"></span>
+                                                    Ready
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator inactive on"></span>
+                                                    Placeholder
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator inactive on"></span>
+                                                    Stock
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-summary text-center">
+                                        <span class="filter-indicator inactive"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                        <div class="btn-group" role="group">
+                                            <button id="filterAlerts" type="button" class="btn btn-link btn-sm"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Alerts
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="filterAlerts"
+                                                 x-placement="bottom-start">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator alerts on"></span>
+                                                    All alerts
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator alerts on"></span>
+                                                    Fault
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator alerts on"></span>
+                                                    Error
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator alerts on"></span>
+                                                    Warning
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="filter-indicator alerts on"></span>
+                                                    Issue
+                                                    &nbsp;
+                                                    <span class="label">15,224</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-summary text-center">
+                                        <span class="filter-indicator alerts"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END CONTAINER HEADER-->
+
+                <!--CONTAINER ITEM-->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="container-item group">
+                        <h5 class="container-item-title margin-null">
+                            <span>
+                                Very very very very very long Group Name
+                            </span>
+                        </h5>
+                        <div class="container-item-body row margin-null">
+                            <div class="col-sm-6 container-item-label">
+                                    <small>4 month ago</small>
+                            </div>
+                            <a href="#" class="container-item-icon"></a>
+                            <div class="col-sm-6 container-item-menu">
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <div class="btn-group" role="group">
+                                        <button id="containerItem12345" type="button" class="btn btn-link"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="containerItem12345"
+                                             x-placement="bottom-start">
+                                            <a class="dropdown-item" href="#"><i class="fa fa-eye"></i> View</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-arrows-alt"></i> Move</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Edit</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-item-status text-center">
+                            <div class="row margin-null">
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator active on"></span>
+                                        <div class="label small">15,224</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator inactive "></span>
+                                        <div class="label small">0</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator alerts on"></span>
+                                        <div class="label small">15,224</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--END CONTAINER ITEM-->
+
+                <!--CONTAINER ITEM (SENSOR)-->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="container-item sensor">
+                        <h5 class="container-item-title margin-null">
+                            <span>
+                                Sensor Name
+                            </span>
+                        </h5>
+                        <div class="container-item-body row margin-null">
+                            <div class="col-sm-6 container-item-label">
+                                    <small>1 min ago</small>
+                            </div>
+                            <a href="#" class="container-item-icon"></a>
+                            <div class="col-sm-6 container-item-menu">
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <div class="btn-group" role="group">
+                                        <button id="containerItem12346" type="button" class="btn btn-link"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="containerItem12346"
+                                             x-placement="bottom-start">
+                                            <a class="dropdown-item" href="#"><i class="fa fa-eye"></i> View</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-arrows-alt"></i> Move</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Edit</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-item-status text-center">
+                            <div class="row margin-null">
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator active"></span>
+                                        <div class="label small">&nbsp;</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator inactive on"></span>
+                                        <div class="label small">Inservise R & D</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator alerts on"></span>
+                                        <div class="label small">Issue</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--END CONTAINER ITEM (SENSOR)-->
+
+                <!--CONTAINER ITEM-->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="container-item superhoard">
+                        <h5 class="container-item-title margin-null">
+                            <span>
+                                Container Name
+                            </span>
+                        </h5>
+                        <div class="container-item-body row margin-null">
+                            <div class="col-sm-6 container-item-label">
+                                <small>4 month ago</small>
+                            </div>
+                            <a href="#" class="container-item-icon"></a>
+                            <div class="col-sm-6 container-item-menu">
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <div class="btn-group" role="group">
+                                        <button id="containerItem12347" type="button" class="btn btn-link"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="containerItem12347"
+                                             x-placement="bottom-start">
+                                            <a class="dropdown-item" href="#"><i class="fa fa-eye"></i> View</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-arrows-alt"></i> Move</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Edit</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-item-status text-center">
+                            <div class="row margin-null">
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator active on"></span>
+                                        <div class="label small">15,224</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator inactive "></span>
+                                        <div class="label small">0</div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a class="" href="#">
+                                        <span class="filter-indicator alerts on"></span>
+                                        <div class="label small">15,224</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--END CONTAINER ITEM-->
+
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div style="height: 229px; background: #757f89; margin: 15px 0"></div>
+                </div>
+            </div>
+            <!--END SENSOR CONTAINER-->
+
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+.open .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  left: auto;
+  right: 0; }
+
+.padding-null {
+  padding: 0; }
+
+.margin-null {
+  margin: 0; }
+
+.side-bar {
+  width: 58px;
+  padding-top: 46px; }
+
+.create-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px; }
+
+.create-icon-sensor {
+  background-image: url("../images/icons/sensor-icon.png"); }
+
+.disabled .create-icon-sensor {
+  background-image: url("../images/icons/sensor-create-icon-inactive.png"); }
+
+.create-icon-group {
+  background-image: url("../images/icons/group-icon.png"); }
+
+.disabled .create-icon-group {
+  background-image: url("../images/icons/group-create-icon-inactive.png"); }
+
+.create-icon-channel {
+  background-image: url("../images/icons/channel-icon.png"); }
+
+.disabled .create-icon-channel {
+  background-image: url("../images/icons/channel-create-icon-inactive.png"); }
+
+.create-icon-superchannel {
+  background-image: url("../images/icons/super-channel-icon.png"); }
+
+.disabled .create-icon-superchannel {
+  background-image: url("../images/icons/super-channel-create-icon-inactive.png"); }
+
+.create-icon-band {
+  background-image: url("../images/icons/band-icon.png"); }
+
+.disabled .create-icon-band {
+  background-image: url("../images/icons/band-create-icon-inactive.png"); }
+
+.create-icon-stash {
+  background-image: url("../images/icons/stash-icon.png"); }
+
+.disabled .create-icon-stash {
+  background-image: url("../images/icons/stash-create-icon-inactive.png"); }
+
+.create-icon-hoard {
+  background-image: url("../images/icons/hoard-icon.png"); }
+
+.disabled .create-icon-hoard {
+  background-image: url("../images/icons/hoard-create-icon-inactive.png"); }
+
+.create-icon-superhoard {
+  background-image: url("../images/icons/super-hoard-icon.png"); }
+
+.disabled .create-icon-superhoard {
+  background-image: url("../images/icons/super-hoard-create-icon-inactive.png"); }
+
+.create-icon-herd {
+  background-image: url("../images/icons/herd-icon.png"); }
+
+.disabled .create-icon-herd {
+  background-image: url("../images/icons/herd-create-icon-inactive.png"); }
+
+.create-icon-sensorspace {
+  background-image: url("../images/icons/sensorspace-icon.png"); }
+
+.disabled .create-icon-sensorspace {
+  background-image: url("../images/icons/sensorspace-create-icon-inactive.png"); }
+
+.create-label {
+  position: relative;
+  top: -3px;
+  padding-left: 15px;
+  display: none; }
+
+@media (min-width: 1200px) {
+  .side-bar {
+    width: 230px; }
+
+  .create-label {
+    display: inline-block; } }
+.breadcrumb {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding-left: 5px; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>'; }
+
+.pagination {
+  padding-top: 10px; }
+
+.pagination .btn-sm {
+  font-size: 0.9rem; }
+
+.pagination .dropdown-menu {
+  max-height: 300px;
+  overflow: auto; }
+
+.sensor-container {
+  border: 2px solid #7b7b7b;
+  border-radius: 20px; }
+
+.sensor-container.herd, .container-item.herd {
+  border-color: #752c39; }
+  .sensor-container.herd .container-header h3, .container-item.herd .container-header h3 {
+    background-image: url("../images/icons/herd-icon.png"); }
+
+.sensor-container.superhoard, .container-item.superhoard {
+  border-color: #9e414d; }
+  .sensor-container.superhoard .container-header h3, .container-item.superhoard .container-header h3 {
+    background-image: url("../images/icons/super-hoard-icon.png"); }
+
+.sensor-container.hoard, .container-item.hoard {
+  border-color: #59b7c6; }
+  .sensor-container.hoard .container-header h3, .container-item.hoard .container-header h3 {
+    background-image: url("../images/icons/hoard-icon.png"); }
+
+.sensor-container.stash, .container-item.stash {
+  border-color: #00a6cf; }
+  .sensor-container.stash .container-header h3, .container-item.stash .container-header h3 {
+    background-image: url("../images/icons/stash-icon.png"); }
+
+.sensor-container.band, .container-item.band {
+  border-color: #bd6c08; }
+  .sensor-container.band .container-header h3, .container-item.band .container-header h3 {
+    background-image: url("../images/icons/band-icon.png"); }
+
+.sensor-container.superchannel, .container-item.superchannel {
+  border-color: #957333; }
+  .sensor-container.superchannel .container-header h3, .container-item.superchannel .container-header h3 {
+    background-image: url("../images/icons/super-channel-icon.png"); }
+
+.sensor-container.channel, .container-item.channel {
+  border-color: #f4e000; }
+  .sensor-container.channel .container-header h3, .container-item.channel .container-header h3 {
+    background-image: url("../images/icons/channel-icon.png"); }
+
+.sensor-container.group, .container-item.group {
+  border-color: #00a98f; }
+  .sensor-container.group .container-header h3, .container-item.group .container-header h3 {
+    background-image: url("../images/icons/group-icon.png"); }
+
+.container-header {
+  border-bottom: solid 2px; }
+  .container-header h3 {
+    padding: 15px 0 15px 45px;
+    margin: 0;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-image: url("../images/icons/sensorspace-icon.png"); }
+
+.container-item {
+  border: 2px solid #7b7b7b;
+  border-radius: 20px;
+  margin: 15px 0; }
+  .container-item .container-item-title {
+    text-align: center;
+    padding: 0 15px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .container-item .container-item-body {
+    height: 60px; }
+    .container-item .container-item-body .container-item-label {
+      height: 50px;
+      margin-right: -25px;
+      display: flex;
+      align-items: center; }
+    .container-item .container-item-body .container-item-icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1; }
+    .container-item .container-item-body .container-item-menu {
+      margin-left: -25px;
+      height: 50px;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+  .container-item .container-item-status {
+    border-top: solid 1px #7b7b7b;
+    padding: 15px 0; }
+    .container-item .container-item-status .label {
+      white-space: nowrap; }
+  .container-item.sensor .container-item-icon {
+    background-image: url("../images/icons/sensor-icon.png"); }
+  .container-item.group .container-item-title {
+    color: #00a98f; }
+  .container-item.group .container-item-icon {
+    background-image: url("../images/icons/group-icon.png"); }
+  .container-item.channel .container-item-title {
+    color: #f4e000; }
+  .container-item.channel .container-item-icon {
+    background-image: url("../images/icons/channel-icon.png"); }
+  .container-item.superchannel .container-item-title {
+    color: #957333; }
+  .container-item.superchannel .container-item-icon {
+    background-image: url("../images/icons/super-channel-icon.png"); }
+  .container-item.band .container-item-title {
+    color: #bd6c08; }
+  .container-item.band .container-item-icon {
+    background-image: url("../images/icons/band-icon.png"); }
+  .container-item.stash .container-item-title {
+    color: #00a6cf; }
+  .container-item.stash .container-item-icon {
+    background-image: url("../images/icons/stash-icon.png"); }
+  .container-item.hoard .container-item-title {
+    color: #59b7c6; }
+  .container-item.hoard .container-item-icon {
+    background-image: url("../images/icons/hoard-icon.png"); }
+  .container-item.superhoard .container-item-title {
+    color: #9e414d; }
+  .container-item.superhoard .container-item-icon {
+    background-image: url("../images/icons/super-hoard-icon.png"); }
+  .container-item.herd .container-item-title {
+    color: #752c39; }
+  .container-item.herd .container-item-icon {
+    background-image: url("../images/icons/herd-icon.png"); }
+  .container-item.sensorspace .container-item-icon {
+    background-image: url("../images/icons/sensorspace-icon.png"); }
+
+.filter-indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7b7b7b; }
+
+.filter-indicator.active {
+  border: 2px solid #0a7a63; }
+
+.filter-indicator.active.on {
+  background: #00a98f; }
+
+.filter-indicator.inactive {
+  border: 1px solid #006580; }
+
+.filter-indicator.inactive.on {
+  background: #00a7ce; }
+
+.filter-indicator.alerts {
+  border: 2px solid #802528; }
+
+.filter-indicator.alerts.on {
+  background: #ff495c; }
+
+.dropdown-item .filter-indicator {
+  position: relative;
+  top: 5px; }
+
+.filter-all {
+  width: 50px;
+  padding: 15px 0;
+  text-align: right; }
+
+.filter-summary {
+  white-space: nowrap; }
+
+.filter-summary .label {
+  display: inline-block;
+  position: relative;
+  top: -5px; }
+
+/*# sourceMappingURL=main.css.map */
