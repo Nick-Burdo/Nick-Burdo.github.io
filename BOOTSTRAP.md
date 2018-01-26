@@ -9,4 +9,4 @@ for further customization.
 # Theme
 
 We use free theme `Slate`
-https://bootswatch.com/slate/
+[https://bootswatch.com/slate/]()
