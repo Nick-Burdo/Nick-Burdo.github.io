@@ -1,6 +1,11 @@
 .side-bar {
   width: 58px;
   padding-top: 46px;
+
+  .side-bar-toggler {
+    width: 58px;
+    display: none;
+  }
 }
 
 .create-icon {
@@ -104,9 +109,36 @@
 @media (min-width: 1200px) {
   .side-bar {
     width: 230px;
-  }
+    padding-top: 14px;
 
-  .create-label {
-    display: inline-block;
+    .side-bar-toggler {
+      display: inline-block;
+
+      i {
+        font-size: 20px;
+      }
+    }
+    .collapser {
+      display: inline-block;
+    }
+    .expander {
+      display: none;
+    }
+    .create-label {
+      display: inline-block;
+    }
+    &.collapsed {
+      width: 58px;
+
+      .collapser {
+        display: none;
+      }
+      .expander {
+        display: inline-block;
+      }
+      .create-label {
+        display: none;
+      }
+    }
   }
 }
