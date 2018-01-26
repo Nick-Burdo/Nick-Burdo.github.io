@@ -11,6 +11,21 @@
 .margin-null {
   margin: 0; }
 
+.flex-no-wrap {
+  flex-wrap: nowrap; }
+
+.badge {
+  font-size: 85%; }
+
+.badge-info {
+  background-color: #00a7ce; }
+
+.badge-success {
+  background-color: #00a98f; }
+
+.badge-danger {
+  background-color: #ff495c; }
+
 .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9,
 .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl, .col-xxl-auto {
   position: relative;
@@ -378,6 +393,15 @@
     background-repeat: no-repeat;
     background-size: 36px;
     background-image: url("../images/icons/sensorspace-icon.png"); }
+  .container-header .container-actions {
+    float: right;
+    padding: 6px 15px; }
+    .container-header .container-actions > div {
+      float: left; }
+    .container-header .container-actions .filter-indicator {
+      margin: 11px 0.5rem; }
+    .container-header .container-actions .dropdown-item.disabled .badge {
+      opacity: 0.5; }
 
 .container-item {
   border: 2px solid #7b7b7b;
@@ -461,22 +485,22 @@
   border-radius: 50%;
   background: #7b7b7b; }
 
-.filter-indicator.active {
+.filter-indicator.filter-active {
   border: 2px solid #0a7a63; }
 
-.filter-indicator.active.on {
+.filter-indicator.filter-active.on {
   background: #00a98f; }
 
-.filter-indicator.inactive {
+.filter-indicator.filter-inactive {
   border: 1px solid #006580; }
 
-.filter-indicator.inactive.on {
+.filter-indicator.filter-inactive.on {
   background: #00a7ce; }
 
-.filter-indicator.alerts {
+.filter-indicator.filter-alerts {
   border: 2px solid #802528; }
 
-.filter-indicator.alerts.on {
+.filter-indicator.filter-alerts.on {
   background: #ff495c; }
 
 .dropdown-item .filter-indicator {

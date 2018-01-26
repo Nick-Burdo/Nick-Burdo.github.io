@@ -3,28 +3,28 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #7b7b7b;
+  background: $filter_null_color;
 }
 
-.filter-indicator.active {
+.filter-indicator.filter-active {
   border: 2px solid #0a7a63;
 }
-.filter-indicator.active.on {
-  background: #00a98f;
+.filter-indicator.filter-active.on {
+  background: $filter_active_color;
 }
 
-.filter-indicator.inactive {
+.filter-indicator.filter-inactive {
   border: 1px solid #006580;
 }
-.filter-indicator.inactive.on {
-  background: #00a7ce;
+.filter-indicator.filter-inactive.on {
+  background: $filter_inactive_color;
 }
 
-.filter-indicator.alerts {
+.filter-indicator.filter-alerts {
   border: 2px solid #802528;
 }
-.filter-indicator.alerts.on {
-  background: #ff495c;
+.filter-indicator.filter-alerts.on {
+  background: $filter_alerts_color;
 }
 
 .dropdown-item .filter-indicator {

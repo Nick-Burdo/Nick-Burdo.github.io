@@ -14,3 +14,20 @@
 .margin-null {
   margin: 0;
 }
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.badge {
+  font-size: 85%;
+}
+.badge-info {
+  background-color: $filter_inactive_color;
+}
+.badge-success {
+  background-color: $filter_active_color;
+}
+.badge-danger {
+  background-color: $filter_alerts_color;
+}

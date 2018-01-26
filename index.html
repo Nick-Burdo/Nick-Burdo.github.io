@@ -244,172 +244,137 @@
                             <!--<h3>All sensorspaces</h3>-->
                             <h3>Herd 305</h3>
                         </div>
-                        <div class="col-md-auto pull-right">
-                            <div class="row">
-                                <div class="col-sm-3 filter-all">
-                                    <button type="button" class="btn btn-link btn-sm">
-                                        All
+
+
+
+
+                        <div class="col-md-auto container-actions">
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <div class="btn-group" role="group">
+                                    <button id="filterDropdown" type="button" class="btn btn-primary"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-filter"></i>
                                     </button>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                        <div class="btn-group" role="group">
-                                            <button id="filterActive" type="button" class="btn btn-link btn-sm"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Active
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="filterActive"
-                                                 x-placement="bottom-start">
+                                    <div class="dropdown-menu" aria-labelledby="filterDropdown"
+                                         x-placement="bottom-start">
+                                        <a class="dropdown-item text-right" href="#">
+                                            <div>
+                                                <span class="fa-stack fa-lg">
+                                                  <i class="fa fa-filter fa-stack-1x"></i>
+                                                  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+                                                </span>
+                                                Clear all filters
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="row flex-no-wrap margin-null">
+                                            <div class="col-sm-4 padding-null">
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
-                                                    All active
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
+                                                    <div>
+                                                        <span class="badge badge-pill badge-success">15,224</span>
+                                                        <span>Active</span>
+                                                    </div>
                                                 </a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Configuring
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Authentificated
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Settingup
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Upgrading
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Setup
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Inservice
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Inservise Test
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator active on"></span>
+                                                    <span class="badge badge-pill badge-success">15,224</span>
                                                     Inservise R&D
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="filter-summary text-center">
-                                        <span class="filter-indicator active"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                        <div class="btn-group" role="group">
-                                            <button id="filterInactive" type="button" class="btn btn-link btn-sm"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Inactive
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="filterInactive"
-                                                 x-placement="bottom-start">
+                                            <div class="col-sm-4 padding-null">
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator inactive on"></span>
-                                                    All inactive
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
+                                                    <span class="badge badge-pill badge-info">15,224</span>
+                                                    Inactive
                                                 </a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator inactive on"></span>
+                                                    <span class="badge badge-pill badge-info">15,224</span>
                                                     Ready
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator inactive on"></span>
+                                                    <span class="badge badge-pill badge-info">15,224</span>
                                                     Placeholder
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator inactive on"></span>
+                                                    <span class="badge badge-pill badge-info">15,224</span>
                                                     Stock
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="filter-summary text-center">
-                                        <span class="filter-indicator inactive"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                        <div class="btn-group" role="group">
-                                            <button id="filterAlerts" type="button" class="btn btn-link btn-sm"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Alerts
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="filterAlerts"
-                                                 x-placement="bottom-start">
+                                            <div class="col-sm-4 padding-null">
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator alerts on"></span>
-                                                    All alerts
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
+                                                    <span class="badge badge-pill badge-danger">15,225</span>
+                                                    Alerts
                                                 </a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator alerts on"></span>
+                                                    <span class="badge badge-pill badge-danger">15,000</span>
                                                     Fault
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator alerts on"></span>
+                                                <a class="dropdown-item disabled" href="#">
+                                                    <span class="badge badge-pill badge-danger">0</span>
                                                     Error
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator alerts on"></span>
+                                                    <span class="badge badge-pill badge-danger">1</span>
                                                     Warning
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                                 <a class="dropdown-item" href="#">
-                                                    <span class="filter-indicator alerts on"></span>
+                                                    <span class="badge badge-pill badge-danger">224</span>
                                                     Issue
-                                                    &nbsp;
-                                                    <span class="label">15,224</span>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="filter-summary text-center">
-                                        <span class="filter-indicator alerts"></span>
-                                    </div>
                                 </div>
+                            </div>
+
+                            <div class="filter-summary text-center">
+                                <span class="filter-indicator filter-active"></span>
+                            </div>
+                            <div class="filter-summary text-center">
+                                <span class="filter-indicator filter-inactive"></span>
+                            </div>
+                            <div class="filter-summary text-center">
+                                <span class="filter-indicator filter-alerts"></span>
+                            </div>
+
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="viewOptions" id="option1" autocomplete="off" checked />
+                                    <i class="fa fa-th"></i>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="viewOptions" id="option2" autocomplete="off" />
+                                    <i class="fa fa-th-list"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
