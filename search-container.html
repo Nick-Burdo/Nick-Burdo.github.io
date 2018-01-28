@@ -44,7 +44,7 @@
                         <i class="fa fa-binoculars"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="mainMenuSearch" x-placement="bottom-start">
-                        <a class="dropdown-item" href="search-container.html">Sensors</a>
+                        <a class="dropdown-item" href="#sensorSearchModal" data-toggle="modal">Sensors</a>
                         <a class="dropdown-item" href="#">Users</a>
                     </div>
                 </div>
@@ -625,6 +625,99 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="sensorSearchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Search containers & sensors</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Sensor Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Sensor IP</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Sensor mac</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row"></div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Group Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Channel Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">SuperChannel Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Band Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Stash Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Hoard Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">SuperHoard Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Herd Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label-sm">Sensorspace Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control-sm">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <a href="search-container.html" class="btn btn-primary">Search</a>
             </div>
         </div>
     </div>
