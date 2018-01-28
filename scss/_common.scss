@@ -1,7 +1,10 @@
+.container, .jumbotron {
+  min-width: 375px;
+}
+
 .open .dropdown-menu {
   display: block;
 }
-
 .dropdown-menu {
   left: auto;
   right: 0;
