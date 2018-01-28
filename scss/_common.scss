@@ -1,0 +1,37 @@
+.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.padding-null {
+  padding: 0;
+}
+
+.margin-null {
+  margin: 0;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.badge {
+  font-size: 85%;
+}
+.badge-info {
+  background-color: $filter_inactive_color;
+}
+.badge-success {
+  background-color: $filter_active_color;
+}
+.badge-danger {
+  background-color: $filter_alerts_color;
+}
+
+.modal-backdrop {
+  background: rgba(0,0,0,0.6);
+}
