@@ -462,7 +462,7 @@
                                 <div class="col-6 container-item-label">
                                     <small>1 min ago</small>
                                 </div>
-                                <a href="#" class="container-item-icon"></a>
+                                <a class="container-item-icon"  href="#sensorViewModal" data-toggle="modal"></a>
                                 <div class="col-6 container-item-menu">
                                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                         <div class="btn-group" role="group">
@@ -472,7 +472,9 @@
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="containerItem12346"
                                                  x-placement="bottom-start">
-                                                <a class="dropdown-item" href="#"><i class="fa fa-eye"></i> View</a>
+                                                <a class="dropdown-item" href="#sensorViewModal" data-toggle="modal">
+                                                    <i class="fa fa-eye"></i> View
+                                                </a>
                                                 <a class="dropdown-item" href="#"><i class="fa fa-arrows-alt"></i> Move</a>
                                                 <a class="dropdown-item" href="#sensorEditModal" data-toggle="modal">
                                                     <i class="fa fa-edit"></i> Edit
@@ -606,7 +608,7 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label class="col-form-label" for="containerEditModalInput">Enter new name</label>
-                    <input type="text" class="form-control" value="Sensor Name" id="containerEditModalInput">
+                    <input type="text" class="form-control" value="Container Name" id="containerEditModalInput">
                 </div>
             </div>
             <div class="modal-footer">
@@ -703,6 +705,59 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="sensorViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sensor Name details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sensor IP
+                        <span class="badge badge-primary badge-pill">10.10.10.100</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sensor mac
+                        <span class="badge badge-primary badge-pill">04-7D-7B-97-0C-9F</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Debug mode
+                        <span class="badge badge-primary badge-pill">off</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Observations mode
+                        <span class="badge badge-info badge-pill">on</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Record mode
+                        <span class="badge badge-primary badge-pill">off</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Light
+                        <span class="badge badge-info badge-pill">yes</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Low power
+                        <span class="badge badge-primary badge-pill">no</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sensor Opsatatus
+                        <span class="badge badge-success badge-pill">Ready</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
