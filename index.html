@@ -37,18 +37,9 @@
                 <i class="fa fa-home"></i>
             </a>
             <!--SEARCH-->
-            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                <div class="btn-group" role="group">
-                    <button id="mainMenuSearch" type="button" class="btn btn-link dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-binoculars"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="mainMenuSearch" x-placement="bottom-start">
-                        <a class="dropdown-item" href="#sensorSearchModal" data-toggle="modal">Sensors</a>
-                        <a class="dropdown-item" href="#">Users</a>
-                    </div>
-                </div>
-            </div>
+            <a class="btn btn-link" href="#sensorSearchModal" data-toggle="modal">
+                <i class="fa fa-binoculars"></i>
+            </a>
             <!--USERS-->
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <div class="btn-group" role="group">
@@ -57,15 +48,15 @@
                         <i class="fa fa-users"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="mainMenuUsers" x-placement="bottom-start">
-                        <a class="dropdown-item" href="#">Users</a>
-                        <a class="dropdown-item" href="#">Roles</a>
+                        <a class="dropdown-item" href="users.html">Users</a>
+                        <a class="dropdown-item" href="roles.html">Roles</a>
                     </div>
                 </div>
             </div>
             <!--OPTIONS-->
-            <button type="button" class="btn btn-link">
+            <a href="options.html" class="btn btn-link">
                 <i class="fa fa-cog"></i>
-            </button>
+            </a>
             <!--PROFILE-->
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <div class="btn-group" role="group">
@@ -77,7 +68,7 @@
                         <a class="dropdown-item active" href="#">&nbsp;English</a>
                         <a class="dropdown-item" href="#">&nbsp;中國</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="profile.html">Profile</a>
                         <a class="dropdown-item" href="#">Logout</a>
                     </div>
                 </div>

@@ -38,3 +38,19 @@
 .modal-backdrop {
   background: rgba(0,0,0,0.6);
 }
+
+.form-control-sm {
+  color: #52575C;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+label.required:after {
+  content: '*';
+  color: red;
+  position: relative;
+  right: -5px;
+}

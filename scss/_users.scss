@@ -1,0 +1,17 @@
+.sensor-container.users {
+  .container-header h3 {
+    background-image: url("../images/icons/user-icon.png");
+    background-size: 27px;
+  }
+  .container-actions > div {
+    float: none;
+  }
+
+  th, td {
+    width: 16.666666667%;
+  }
+}
+
+.table-filter td {
+  padding: .25rem;
+}
