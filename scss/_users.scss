@@ -7,8 +7,24 @@
     float: none;
   }
 
-  th, td {
-    width: 16.666666667%;
+  .table-users {
+    th, td {
+      width: 16.666666667%;
+    }
+  }
+  .table-roles {
+    .role-info {
+      padding: .25rem;
+    }
+    .list-group:nth-child(2) {
+      margin-top: 5px;
+    }
+    .list-group-item {
+      padding: .25rem 1.25rem;
+    }
+    th, td {
+      //width: 20%;
+    }
   }
 }
 

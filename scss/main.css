@@ -601,8 +601,14 @@ label.required:after {
   background-size: 27px; }
 .sensor-container.users .container-actions > div {
   float: none; }
-.sensor-container.users th, .sensor-container.users td {
+.sensor-container.users .table-users th, .sensor-container.users .table-users td {
   width: 16.666666667%; }
+.sensor-container.users .table-roles .role-info {
+  padding: .25rem; }
+.sensor-container.users .table-roles .list-group:nth-child(2) {
+  margin-top: 5px; }
+.sensor-container.users .table-roles .list-group-item {
+  padding: .25rem 1.25rem; }
 
 .table-filter td {
   padding: .25rem; }
